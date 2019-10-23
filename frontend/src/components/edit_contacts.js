@@ -39,6 +39,7 @@ class EditContact extends Component {
         axios.put(`http://localhost:5000/contacts/update/${this.props.id}`, contact)
             .then(res => {
                 console.log(res.data)
+            //Ανανεωνω τις επαφες μου
                 this.props.updateContacts();
             })
 
