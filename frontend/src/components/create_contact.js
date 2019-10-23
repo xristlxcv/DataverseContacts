@@ -76,8 +76,8 @@ class CreateContact extends Component {
 
         }
         //καλω τα validations
+       this.validPhone();
         this.validEmail();
-        this.validPhone();
         this.validationCheck();
         console.log(contact)
         //Δημιουρφια επαφης
