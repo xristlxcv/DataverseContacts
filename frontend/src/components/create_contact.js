@@ -84,6 +84,7 @@ class CreateContact extends Component {
         axios.post('http://localhost:5000/contacts/add', contact)
             .then(res => {
                 console.log(res)
+            //Aνανεωνω τις επαφες 
                 this.props.updateContacts();
                 this.setState({ errMessage: "" })
             }).catch(err => {
