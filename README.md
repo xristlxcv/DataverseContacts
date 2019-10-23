@@ -4,6 +4,7 @@
 Backend
 
 ``` 
+cd backend
 npm init -y
 npm install express mongoose cors nodemon
 
@@ -14,8 +15,9 @@ nodemon server.js
 ```
 Frontend
 
-create a react app
 ``` 
+cd frontend
+npm install
 npm install axios
 ```
 Run react app:
