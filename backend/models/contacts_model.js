@@ -20,7 +20,14 @@ const contactSchema = new Schema({
     address: {
         type: String
     },
-    phone: [{ type: Number }]
+    phone: [{
+        type: Number,
+        index: {
+            unique: true,
+            partialFilterExpression: { phone: { $type: "string" } },
+        },
+        default: null
+    }]
 });
 
 module.exports = mongoose.model("Contact", contactSchema);
