@@ -42,7 +42,7 @@ class CreateContact extends Component {
 
 
         for (let i = 0; i <= this.props.phonesForValidation.length; i++) {
-            if (this.props.phonesForValidation.includes(i) === false) {
+            if (this.props.phonesForValidation.includes(this.state.phone) === false) {
                 this.setState({ errMessage: "Phone is already exists" })
             }
         }
@@ -50,7 +50,7 @@ class CreateContact extends Component {
 
         //Eλεγχος να ειναι αριθμος
         if (/^\d+$/.test(this.state.phone) === false) {
-            this.setState({ errMessage: "Phone is not number" })
+            this.setState({ errMessage: "Phone should be number" })
         }
     }
     //Ελεγχος για αν υπαρχει το email.Mεσω των props που ειναι πινακας ελεγχω αν υπαρχει σε αυτην το μαιλ που εβαλε ο χρηστης και αν υπαρχει εμφανιζει το καταλληλο μηνυμα
