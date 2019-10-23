@@ -5,7 +5,7 @@ Backend
 
 ``` 
 cd backend
-npm install express mongoose cors nodemon
+npm install express mongoose cors nodemon dotenv
 
 ```
 To run server:
