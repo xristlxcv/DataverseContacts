@@ -20,12 +20,9 @@ const contactSchema = new Schema({
     address: {
         type: String
     },
-    phone: [{
+     phone: [{
         type: Number,
-        index: {
-            unique: true,
-            partialFilterExpression: { phone: { $type: "string" } },
-        },
+        unique: true,
         default: null
     }]
 });
