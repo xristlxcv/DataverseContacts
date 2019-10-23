@@ -34,7 +34,7 @@ class App extends Component {
   }
   render() {
     //Για να κανω validation χρειαζομαι τα τηλεφωνα και τα μαιλς αντισοιχα...ετσι τα αποθκευω σε arrays και μετα
-    // τα περναω μεσω props ωστε να κανω στο αντοστοιχο component το validation
+    // τα περναω μεσω props ωστε να κανω στο αντιστοιχο component το validation
     const emailArray = [];
     const phoneArray = [];
     this.state.contacts.map((data) => {
