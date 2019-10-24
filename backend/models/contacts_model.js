@@ -20,6 +20,8 @@ const contactSchema = new Schema({
     address: {
         type: String
     },
+// θέλω να περνάει null τιμές και τάυτοχρονα να είναι unique ώστε να μην βγάζει error σε περίπτωση διπλου null
+
      phone: [{
         type: Number,
         index: {
