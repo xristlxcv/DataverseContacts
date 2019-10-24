@@ -22,8 +22,11 @@ const contactSchema = new Schema({
     },
      phone: [{
         type: Number,
-        unique: true,
-        default: null
+        index: {
+            unique: true,
+            partialFilterExpression: { phone: { $type: "number" } }
+        },
+        set: v => (v === "" ? null : v)
     }]
 });
 
