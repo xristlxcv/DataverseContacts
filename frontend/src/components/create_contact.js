@@ -50,7 +50,7 @@ class CreateContact extends Component {
 
         //Eλεγχος να ειναι αριθμος
         if (/^\d+$/.test(this.state.phone) === false) {
-            this.setState({ errMessage: "Phone should be number" })
+            this.setState({ errMessage: "Phone should be number or Phone is already exists" })
         }
     }
     //Ελεγχος για αν υπαρχει το email.Mεσω των props που ειναι πινακας ελεγχω αν υπαρχει σε αυτην το μαιλ που εβαλε ο χρηστης και αν υπαρχει εμφανιζει το καταλληλο μηνυμα
