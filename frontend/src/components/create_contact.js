@@ -56,7 +56,7 @@ class CreateContact extends Component {
     //Ελεγχος για αν υπαρχει το email.Mεσω των props που ειναι πινακας ελεγχω αν υπαρχει σε αυτην το μαιλ που εβαλε ο χρηστης και αν υπαρχει εμφανιζει το καταλληλο μηνυμα
     validEmail = () => {
         console.log(this.state.mailValidation)
-        if (this.props.mailForValidation.includes(this.state.email)) {
+        if (this.props.mailForValidation.includes(this.state.email.trim())) {
             this.setState({ errMessage: "Email is already exists" })
         }
     }
